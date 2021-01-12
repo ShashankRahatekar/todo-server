@@ -27,6 +27,6 @@ app.post('/add-data', jsonParser, (req, res) => {
 // 	res.end({val: 'Hello World!!'});
 // });
 
-app.listen(process.env.port, () => {
-	console.log('Server Listening to 8080 port on 127.0.0.1');
+app.listen(process.env.PORT, () => {
+	console.log(`Server Listening to ${process.env.PORT} port on 127.0.0.1`);
 });
